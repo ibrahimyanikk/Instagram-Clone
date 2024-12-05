@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="152dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:onClick="SignUp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/paswordtext"
+        app:layout_constraintTop_toBottomOf="@+id/paswordtext" />
+
+    <EditText
+        android:id="@+id/paswordtext"
+        android:layout_width="368dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="enter pasword"
+        android:inputType="textPassword"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtext" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="152dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="44dp"
+        android:onClick="SignIn"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="@+id/paswordtext"
+        app:layout_constraintTop_toBottomOf="@+id/paswordtext" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="360dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
